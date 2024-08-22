@@ -29,7 +29,7 @@ export default async function PostPage({ params }: { params: { postID: string } 
           Tillbaka
         </Link>
         <div className="relative w-full h-[300px] md:h-[500px] rounded-2xl overflow-hidden mb-6 md:mb-8">
-          <Image src={imageURL} className="object-cover" alt={post.title.rendered} fill quality={50} />
+          <Image src={imageURL} className="object-cover" alt={post.title.rendered} fill />
         </div>
         <div className="max-w-screen-md mx-auto">
           <span className="text-muted-foreground text-sm">{date.toDateString()}</span>
